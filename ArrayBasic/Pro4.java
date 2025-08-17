@@ -14,23 +14,37 @@ public class Pro4 {
             arr[i] = sc.nextInt();
         }
 
-        int inc = incre(arr);
+        int inc = incresing(arr);
+        int dic = decresing(arr);
         if(inc ==1)System.out.println("Array is Increment order ");
+        else if(dic ==1) System.out.println("Array is Decresing Order ");
         else System.out.println("Array is not sorted ");
    
 
    
  }
-  public static int incre(int[] arr) {
+  public static int incresing(int[] arr) {
     
     for(int i=0;i<arr.length-1;i++)
     {
-        if(arr[i]>=arr[i+1])
+        if(arr[i]>arr[i+1])
         {
             return 0;
         }
     }
         return 1;
     
+    }
+    public static int decresing(int arr[])
+    {
+        for(int i=0;i<arr.length-1;i++)
+        {
+            if(arr[i] < arr[i+1])
+            {
+
+                return 0;
+            }
+        }
+        return 1;
     }
 }
