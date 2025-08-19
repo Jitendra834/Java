@@ -39,5 +39,6 @@ public static void main(String[] args) {
     }
     if(a==1)System.out.println("Not Palindrome");
     else System.out.println("Palindrome");
+    System.out.print("Reversed Array :");
 }    
 }
