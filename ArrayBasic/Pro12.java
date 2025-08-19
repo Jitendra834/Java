@@ -1,5 +1,6 @@
 
 
+// check array is pelindrome or not 
 
 import java.util.*;
 
